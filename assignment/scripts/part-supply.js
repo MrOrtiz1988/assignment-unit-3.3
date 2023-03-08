@@ -72,7 +72,7 @@ for(x of supplyChanges){
 console.log('8. Total supplies available is:');
 
 let sumOfSupplies = supplyChanges.reduce((a, b) => a + b);
-console.log(sumOfSupplies);
+console.log(sumOfSupplies, 'Total Suplies');
 //not sure if i needed an initializer but it works either way
 
 // 9. We have a large stash of parts in our warehouse that we 
@@ -82,3 +82,13 @@ console.log(sumOfSupplies);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+let boxes = 0;
+let numOfParts = 7;
+let totalParts = 572;
+while(numOfParts < totalParts){
+    numOfParts += 7;
+    boxes ++;
+}
+
+console.log('It will take', boxes, 'until no more boxes can be filled');
